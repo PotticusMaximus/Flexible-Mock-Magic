@@ -9,22 +9,26 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 100vw;
+  width: 100%;
   background-color: #59d9a1;
   padding-left: 30px;
   padding-right: 10px;
 }
 
 .logo {
-  height: auto;
-  width: auto;
+  min-width: max-content;
+  margin-right: -300px;
   display: inline-block;
 }
 
 .nav-links {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-end;
+  align-content: flex-start;
   list-style: none;
 }
 
@@ -32,7 +36,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px 15px;
+  padding: 5px 10px;
   text-decoration: none;
   color: white;
 }
@@ -57,8 +61,9 @@
 
 .sidebar {
   display: flex;
-  flex-flow: column;
-  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   background-color: #242457;
   color: white;
   padding: 3rem;
